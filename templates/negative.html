@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="../static/css/style.css" />
+  </head>
+  <body>
+    <div class="w-full h-screen">
+      <div class="max-w-[1000px] mx-auto h-full">
+        <nav class="border-b-2 border-gray-700 flex items-center py-[25px]">
+          <a class="ml-5 md:ml-0">
+            <img
+              src="../static/img/Logo.png"
+              alt="logo"
+              class="rounded-md w-[50px] md:w-[75px] bg-white"
+            />
+          </a>
+          <h1
+            class="w-full flex justify-center text-2xl md:text-3xl text-blue-500 font-bold"
+          >
+            STROKE PREDICTION
+          </h1>
+        </nav>
+        <div class="max-w-7xl mx-auto mt-[10%]">
+          <div class="relative group">
+            <div
+              class="absolute -inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg blur opacity-100"
+            ></div>
+            <div
+              class="relative px-7 py-8 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6"
+            >
+              <div class="space-y-4 w-full flex flex-col items-center">
+                <img
+                  src="../static/img/warning2.png"
+                  class="w-[50px]"
+                />
+                <div
+                  id="result"
+                  class="flex flex-col w-full justify-center items-center gap-[5px]"
+                >
+
+                <div class="flex gap-2 justify-center items-center">
+                  <strong class="text-center text-red-500">{{result}}</strong>
+                  <img
+                  src="../static/img/upset.png"
+                  style="color: red"
+                  class="w-6 h-6 text-red"
+                  />
+                </div>
+
+                <div class="flex flex-col mt-2">
+                  <span>Hal-hal yang dapat dilakukan untuk mengurangi risiko stroke:<span/>
+                    <ul class="flex flex-col gap-1 mt-2">
+                      <li>1. Kontrol tekanan darah<li/>
+                      <li>2. Makan makanan sehat<li/>
+                      <li>3. Aktif berolahraga<li/>
+                      <li>4. Berhenti merokok<li/>
+                      <li>5. Perhatikan kadar kolesterol<li/>
+                    <ul>
+                </div>
+
+                </div>
+                <a
+                  href="/"
+                  class="block font-bold text-blue-600 hover:text-blue-500 transition duration-200"
+                >
+                  Back →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
